@@ -15,3 +15,9 @@ phases:
   post_build:
     commands:
       - zip -r nuxtjs-app.zip .nuxt package.json nuxt.config.js ecosystem.config.js
+
+artifacts:
+  files:
+    - appspec.yml
+    - nuxtjs-app.zip
+  discard-paths: yes

@@ -8,9 +8,9 @@ rm -rf /home/ec2-user/front/app
 mkdir /home/ec2-user/front/app
 
 echo "> $ZIP_PATH 압축 해제"
-unzip -d /home/ec2-user/frontend/app/ $ZIP_PATH
+unzip -d /home/ec2-user/front/app/ $ZIP_PATH
 
-cd /home/ec2-user/frontend/app
+cd /home/ec2-user/front/app
 
 npm i
 

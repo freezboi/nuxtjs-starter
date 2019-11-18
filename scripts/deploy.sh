@@ -1,5 +1,5 @@
 #!/bin/bash
-ZIP_PATH=$(ls /home/ec2-user/frontend/build/*.zip)
+ZIP_PATH=$(ls /home/ec2-user/front/build/*.zip)
 
 pm2 kill
 

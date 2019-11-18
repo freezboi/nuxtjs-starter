@@ -20,4 +20,5 @@ artifacts:
   files:
     - appspec.yml
     - nuxtjs-app.zip
+    - scripts/**
   discard-paths: yes

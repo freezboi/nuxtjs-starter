@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10 # 런타임 nodejs 10으로 설정
+    commands:
+      - npm i npm@latest -g # npm 버전 업데이트
+  pre_build:
+    commands:
+      - npm install # 빌드에 필요한 패키지 설치
+  build:
+    commands:
+      - npm run build # 빌드
+  post_build:
+    commands:
+      - zip -r nuxtjs-app.zip .nuxt package.json nuxt.config.js ecosystem.config.js
